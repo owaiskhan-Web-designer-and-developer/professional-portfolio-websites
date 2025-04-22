@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/header/favicon.svg" type="image/x-icon">
+        <title>Pro Grow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@200..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <div class="blury"></div>
+        <canvas id="background-canvas" width="628" height="933"></canvas>
+        <div id="cursor" class="cursor">
+            <div class="ring">
+                <div></div>
+            </div>
+            <div class="ring">
+                <div></div>
+            </div>
+        </div>
+        <!--================ [ Loader Start ] ================-->
+        <div class="loader-mask">
+            <div class="loader"></div>
+        </div>
+        <!--================ [ Loader Exit ] ================-->
+        <!--================ [ Header section Start ] ================-->
+        <div id="header-main" data-header>
+            <div class="container">
+                <header class="header" id="header" data-header>
+                    <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+                    <div class="menu-icon">
+                        <a href="javascript:void(0)"><i class="ri-menu-3-line menu-option"></i></a>
+                        <a href="javascript:void(0)"><i class="ri-close-line close-menu"></i></a>
+                    </div>
+                    <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download">
+                        <div class="down-ander">
+                            <div class="images-down">
+                                <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                            </div>
+                            <p>Download CV</p>
+                        </div>
+                    </a>
+                </header>
+            </div>
+        </div>
+        <nav class="main-header-menu">
+            <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+            <div class="container">
+                <ul class="tabs-ul-menu">
+                    <li class="tabs-li">
+                        <a href="about.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">About</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="resume.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Resume</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="services.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Services</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="portfolio.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="pricing.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Pricing</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="blogs.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Blogs</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="contact.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download-nav">
+                    <div class="down-ander">
+                        <div class="images-down">
+                            <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                        </div>
+                        <p>Download CV</p>
+                    </div>
+                </a>
+                <div class="social-icon-main">
+                    <a href="https://medium.com/" class="social-design-main">
+                        <img src="assets/images/footer/medium.svg" alt="medium">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-design-main">
+                        <img src="assets/images/footer/insta.svg" alt="insta">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="social-design-main">
+                        <img src="assets/images/footer/twitte.svg" alt="twitte">
+                    </a>
+                    <a href="mailto:support@davidoutwear.com" class="social-design-main">
+                        <img src="assets/images/footer/mail.svg" alt="mail">
+                    </a>
+                    <a href="https://dribbble.com/" class="social-design-main">
+                        <img src="assets/images/footer/drrible.svg" alt="drrible">
+                    </a>
+                    <a href="https://www.behance.net/" class="social-design-main">
+                        <img src="assets/images/footer/behance.svg" alt="behance">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-design-main">
+                        <img src="assets/images/footer/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--================ [ Header section Exit ] ================-->
+        <!--================ [ Hero section Start ] ================-->
+        <div class="hero" id="hero">
+            <div class="container ">
+                <nav class="main-menu">
+                    <div class="container">
+                        <ul class="tabs-ul animate-section-very">
+                            <li class="tabs-li" data-tab="About">
+                                <a href="about.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">About</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Resume">
+                                <a href="resume.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Resume</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Services">
+                                <a href="services.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Services</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Portfolio">
+                                <a href="portfolio.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Portfolio</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Pricing">
+                                <a href="pricing.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Pricing</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Blogs">
+                                <a href="blogs.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Blogs</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Contact">
+                                <a href="contact.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-hero animate-section main-hero-frelance">
+                    <div class="bg-image-main">
+                    </div>
+                    <div class="education-exper">
+                        <div class="row demo-exper">
+                            <div class="col-xxl-6 col-lg-6">
+                                <h1 class="section-heading-text">Education</h1>
+                                <span class="section-length">Lorem et metus urna volutpat aliquet diam tincidunt. Lectus
+                                    integer semper enim interdum amet sed ut eros.</span>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Bachelor of Fine Arts in Photography</p>
+                                        <p class="cursus university">Cambridge University / 2010 - 2014</p>
+                                        <p class="desc-resume">Eu nulla at mauris cursus consectetur posuere iaculis
+                                            ipsum neque. Morbi felis pellentesque ligula sed dictumst
+                                            imperdiet nunc vulputate.</p>
+                                    </div>
+                                </div>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Master of Arts in Visual Arts</p>
+                                        <p class="cursus university">Cambridge University / 2014 - 2016</p>
+                                        <p class="desc-resume">Porttitor euismod at semper ut massa. Lorem varius magna
+                                            volutpat nunc. Et faucibus scelerisque donec augue eleifenda
+                                            morbi.</p>
+                                    </div>
+                                </div>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Diploma in Computer</p>
+                                        <p class="cursus university">Cambridge University / 2016 - 2018</p>
+                                        <p class="desc-resume">Adipiscing sed magna tempus arcu morbi. Ipsum
+                                            pellentesque lorem suscipit in. Hendrerit rhoncus quis tempor urna
+                                            pharetra ut erat.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-lg-6">
+                                <h1 class="section-heading-text exper-resumne">Experience</h1>
+                                <span class="section-length">Lorem et metus urna volutpat aliquet diam tincidunt. Lectus
+                                    integer semper enim
+                                    interdum amet sed ut eros.</span>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Lead Photographer</p>
+                                        <p class="cursus university">Envato / 2020 - Current</p>
+                                        <p class="desc-resume">Ipsum erat duis leo lectus tellus neque dictumst.
+                                            Dignissim tortor quis nisl mi lectus. Massa facilisis ac eget
+                                            fermentum vitae. Dictum rutrum sed.</p>
+                                    </div>
+                                </div>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Freelance Photographer</p>
+                                        <p class="cursus university">Apple / 2019 - 2020</p>
+                                        <p class="desc-resume">Congue dolor gravida eu tristique netus posuere dolor.
+                                            Penatibus imperdiet egestas ut sit scelerisque sapien a.</p>
+                                    </div>
+                                </div>
+                                <div class="education position-relative">
+                                    <div class="side_circle_ring">
+                                        <div class="small_yellow_border">
+                                            <div class="small_yellow_circle">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="small_yellow_border_main">
+                                        <p class="bachelor">Wedding Photographer</p>
+                                        <p class="cursus university">Twitter / 2018 - 2019</p>
+                                        <p class="desc-resume">Aliquet at interdum pellentesque non fringilla eget orci
+                                            suspendisse. A iaculis augue vitae ultricies fusce sit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-set">
+                        <h2 class="section-heading-text mega-line">Skillsets</h2>
+                        <div class="coding-skill-section">
+                            <div id="progress">
+                                <div data-num="79" class="progress-item item-1">sd</div>
+                                <div data-num="92" class="progress-item item-2">sd</div>
+                                <div data-num="85" class="progress-item item-3">sd</div>
+                                <div data-num="70" class="progress-item item-4">sd</div>
+                                <div data-num="76" class="progress-item item-5">ds</div>
+                                <div data-num="83" class="progress-item item-6">ds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-set demo-overall">
+                        <h2 class="section-heading-text mega-line">Overall</h2>
+                        <div class="row">
+                            <div class="col-xxl-6 col-lg-6">
+                                <div class="skills-container">
+                                    <div class="skill-container">
+                                        <p>Travel Photography</p>
+                                        <div class="percentage html-percentage">90%</div>
+                                        <div class="bar">
+                                            <span class="html"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Portrait Photography</p>
+                                        <div class="percentage css-percentage">90%</div>
+                                        <div class="bar">
+                                            <span class="css"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Wedding Shoots</p>
+                                        <div class="percentage javascript-percentage">80%</div>
+                                        <div class="bar">
+                                            <span class="javascript"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-lg-6">
+                                <div class="skills-container">
+                                    <div class="skill-container">
+                                        <p>Photography
+                                        </p>
+                                        <div class="percentage react-percentage">70%</div>
+                                        <div class="bar photo-graphy">
+                                            <span class="react"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Videography</p>
+                                        <div class="percentage node-percentage">50%</div>
+                                        <div class="bar">
+                                            <span class="node"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-container">
+                                        <p>Fashion Photo</p>
+                                        <div class="percentage javascript-percentage">80%</div>
+                                        <div class="bar">
+                                            <span class="javascript"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coding-skill overflow-hidden">
+                        <h2 class="section-heading-text mega-line">Awards</h2>
+                        <div class="row design-data">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front">
+                                            <div class="inner">
+                                                <div class="years-award-img">
+                                                    <img src="assets/images/resume/interior.png" alt="award"
+                                                        class="winner-award">
+                                                    <p class="award-yer">2025</p>
+                                                </div>
+                                                <p class="award-interior">Awwwards Interior</p>
+                                                <p class="award-winner-text">Winner</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="inner">
+                                                <p class="flip-back-text">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing elit. Sit, perferendis!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front">
+                                            <div class="inner">
+                                                <div class="years-award-img">
+                                                    <img src="assets/images/resume/webby.png" alt="award"
+                                                        class="winner-award">
+                                                    <p class="award-yer">2024</p>
+                                                </div>
+                                                <p class="award-interior">The Webby Awards</p>
+                                                <p class="award-winner-text">Nominee</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="inner">
+                                                <p class="flip-back-text">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing elit. Sit, perferendis!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front">
+                                            <div class="inner">
+                                                <div class="years-award-img">
+                                                    <img src="assets/images/resume/ewa.png" alt="award"
+                                                        class="winner-award">
+                                                    <p class="award-yer">2023</p>
+                                                </div>
+                                                <p class="award-interior">EWA Design</p>
+                                                <p class="award-winner-text">Winner</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="inner">
+                                                <p class="flip-back-text">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing elit. Sit, perferendis!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front">
+                                            <div class="inner">
+                                                <div class="years-award-img">
+                                                    <img src="assets/images/resume/best.png" alt="award"
+                                                        class="winner-award">
+                                                    <p class="award-yer">2022</p>
+                                                </div>
+                                                <p class="award-interior">BEST Star</p>
+                                                <p class="award-winner-text">Winner</p>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="inner">
+                                                <p class="flip-back-text">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing elit. Sit, perferendis!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================ [ Hero section Exit ] ================-->
+        <!--================ [ Footer section Start ] ================-->
+        <footer class="footer animate-section">
+            <div class="container">
+                <div class="contain">
+                    <p class="copy-right">All rights reserved © <a
+                            href="https://1.envato.market/website-portfolio">The_Krishna</a></p>
+                    <div class="social-icon">
+                        <a href="https://medium.com/" class="social-design">
+                            <img src="assets/images/footer/medium.svg" alt="medium">
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-design">
+                            <img src="assets/images/footer/insta.svg" alt="insta">
+                        </a>
+                        <a href="https://x.com/?lang=en" class="social-design">
+                            <img src="assets/images/footer/twitte.svg" alt="twitte">
+                        </a>
+                        <a href="mailto:support@davidoutwear.com" class="social-design">
+                            <img src="assets/images/footer/mail.svg" alt="mail">
+                        </a>
+                        <a href="https://dribbble.com/" class="social-design">
+                            <img src="assets/images/footer/drrible.svg" alt="drrible">
+                        </a>
+                        <a href="https://www.behance.net/" class="social-design">
+                            <img src="assets/images/footer/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-design">
+                            <img src="assets/images/footer/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ [ Footer section Exit ] ================-->
+        <!--================ [Jquery File] ================-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <!--================ [vanila tilt File] ================-->
+        <script src="assets/js/vanilla-tilt.min.js"></script>
+        <!--================ [three min File] ================-->
+        <script src="assets/js/three.min.js"></script>
+        <!--================ [gsap File] ================-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--================ [popups File] ================-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--================ [Isotope File] ================-->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!--================ [Bootstrap File] ================-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <!--================ [net File] ================-->
+        <script src="assets/js/net_animation.js"></script>
+        <!--================ [Slick File] ================-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--================ [State.js] ================-->
+        <script src="assets/js/stats.min.js"></script>
+        <!--================ [script File] ================-->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

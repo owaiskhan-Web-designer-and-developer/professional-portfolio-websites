@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/header/favicon.svg" type="image/x-icon">
+        <title>Pro Grow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@200..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <div class="blury"></div>
+        <canvas id="background-canvas" width="628" height="933"></canvas>
+        <div id="cursor" class="cursor">
+            <div class="ring">
+                <div></div>
+            </div>
+            <div class="ring">
+                <div></div>
+            </div>
+        </div>
+        <!--================ [ Loader Start ] ================-->
+        <div class="loader-mask">
+            <div class="loader"></div>
+        </div>
+        <!--================ [ Loader Exit ] ================-->
+        <!--================ [ Header section Start ] ================-->
+        <div id="header-main" data-header>
+            <div class="container">
+                <header class="header" id="header" data-header>
+                    <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+                    <div class="menu-icon">
+                        <a href="javascript:void(0)"><i class="ri-menu-3-line menu-option"></i></a>
+                        <a href="javascript:void(0)"><i class="ri-close-line close-menu"></i></a>
+                    </div>
+                    <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download">
+                        <div class="down-ander">
+                            <div class="images-down">
+                                <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                            </div>
+                            <p>Download CV</p>
+                        </div>
+                    </a>
+                </header>
+            </div>
+        </div>
+        <nav class="main-header-menu">
+            <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+            <div class="container">
+                <ul class="tabs-ul-menu">
+                    <li class="tabs-li">
+                        <a href="about.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">About</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="resume.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Resume</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="services.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Services</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="portfolio.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="pricing.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Pricing</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="blogs.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Blogs</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="contact.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download-nav">
+                    <div class="down-ander">
+                        <div class="images-down">
+                            <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                        </div>
+                        <p>Download CV</p>
+                    </div>
+                </a>
+                <div class="social-icon-main">
+                    <a href="https://medium.com/" class="social-design-main">
+                        <img src="assets/images/footer/medium.svg" alt="medium">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-design-main">
+                        <img src="assets/images/footer/insta.svg" alt="insta">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="social-design-main">
+                        <img src="assets/images/footer/twitte.svg" alt="twitte">
+                    </a>
+                    <a href="mailto:support@davidoutwear.com" class="social-design-main">
+                        <img src="assets/images/footer/mail.svg" alt="mail">
+                    </a>
+                    <a href="https://dribbble.com/" class="social-design-main">
+                        <img src="assets/images/footer/drrible.svg" alt="drrible">
+                    </a>
+                    <a href="https://www.behance.net/" class="social-design-main">
+                        <img src="assets/images/footer/behance.svg" alt="behance">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-design-main">
+                        <img src="assets/images/footer/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--================ [ Header section Exit ] ================-->
+        <!--================ [ Hero section Start ] ================-->
+        <div class="hero" id="hero">
+            <div class="container ">
+                <nav class="main-menu">
+                    <div class="container">
+                        <ul class="tabs-ul animate-section-very">
+                            <li class="tabs-li" data-tab="About">
+                                <a href="about.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">About</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Resume">
+                                <a href="resume.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Resume</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Services">
+                                <a href="services.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Services</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Portfolio">
+                                <a href="portfolio.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Portfolio</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Pricing">
+                                <a href="pricing.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Pricing</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Blogs">
+                                <a href="blogs.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Blogs</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Contact">
+                                <a href="contact.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-hero animate-section main-hero-set main-hero-frelance">
+                    <div class="bg-image-main">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center ">
+                            <h1 class="section-heading-text meni">Explore <span>My Latest Work</span> and Discover
+                                the Craftsmanship Behind Each Design</h1>
+                            <p class="text-desc-title">Explore my latest work and discover the craftsmanship behind each
+                                design: A detailed look into how I bring innovation
+                                and creativity to life.</p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-2.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Wedding Photography</p>
+                                            <span class="date-poer">Date: 31 January 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-5.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Travel Photography</p>
+                                            <span class="date-poer">Date: 20 January 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-4.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Fashion Photography</p>
+                                            <span class="date-poer">Date: 01 January 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-7.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Wedding Photography</p>
+                                            <span class="date-poer">Date: 16 December 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-1.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Wedding Photography</p>
+                                            <span class="date-poer">Date: 15 December 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-6.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Wedding Photography</p>
+                                            <span class="date-poer">Date: 25 June 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-3.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link soundcloud"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Wedding Photography</p>
+                                            <span class="date-poer">Date: 19 April 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-8.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Travel Photography</p>
+                                            <span class="date-poer">Date: 16 March 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-items">
+                                <div class="item-port">
+                                    <div class="img">
+                                        <img src="assets/images/portfolio/Gallary-2.png" alt="portfolio">
+                                        <a href="#services-popup-content" class="link"></a>
+                                        <div class="Desc-port">
+                                            <p class="name">Animal Photography</p>
+                                            <span class="date-poer">Date: 18 January 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-port">
+                        <a href="javascript:void(0)" class="load-port" id="loadMore-more">
+                            <div class="load-main">
+                                <div class="load-down">
+                                    <img src="assets/images/portfolio/loader.svg" alt="download" class="icon-down">
+                                </div>
+                                <p>Load More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="services-popup-content" class="popup-container">
+                    <div class="popup-content popup-content2">
+                        <a href="#" class="close"><i class="ri-close-line"></i></a>
+                        <div class="front-port">
+                            <div class="left-desc">
+                                <h2 class="simple-steps">Welcome to Our Wedding Photo Gallery</h2>
+                                <p class="most-desc">We have a beautiful and spacious photo studio. This is ideal for
+                                    photographing pack shots. paintings, products or
+                                    people. Different backgrounds are available, daylight comes in sideways and there is
+                                    an extensive flash installation</p>
+                            </div>
+                        </div>
+                        <div class="row very-weeding">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-1.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-2.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-3.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-4.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-5.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-6.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-7.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-8.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-1.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-2.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-3.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-4.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-5.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-6.png" alt="portfolio">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-12 content">
+                                <div class="image-wedding">
+                                    <img src="assets/images/portfolio/Image-7.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-port">
+                            <a href="javascript:void(0)" class="load-port" id="loadMore">
+                                <div class="load-main">
+                                    <div class="load-down">
+                                        <img src="assets/images/portfolio/loader.svg" alt="download" class="icon-down">
+                                    </div>
+                                    <p>Load More</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================ [ Hero section Exit ] ================-->
+        <!--================ [ Footer section Start ] ================-->
+        <footer class="footer animate-section">
+            <div class="container">
+                <div class="contain">
+                    <p class="copy-right">All rights reserved © <a
+                            href="https://1.envato.market/website-portfolio">The_Krishna</a></p>
+                    <div class="social-icon">
+                        <a href="https://medium.com/" class="social-design">
+                            <img src="assets/images/footer/medium.svg" alt="medium">
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-design">
+                            <img src="assets/images/footer/insta.svg" alt="insta">
+                        </a>
+                        <a href="https://x.com/?lang=en" class="social-design">
+                            <img src="assets/images/footer/twitte.svg" alt="twitte">
+                        </a>
+                        <a href="mailto:support@davidoutwear.com" class="social-design">
+                            <img src="assets/images/footer/mail.svg" alt="mail">
+                        </a>
+                        <a href="https://dribbble.com/" class="social-design">
+                            <img src="assets/images/footer/drrible.svg" alt="drrible">
+                        </a>
+                        <a href="https://www.behance.net/" class="social-design">
+                            <img src="assets/images/footer/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-design">
+                            <img src="assets/images/footer/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ [ Footer section Exit ] ================-->
+        <!--================ [Jquery File] ================-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <!--================ [popups File] ================-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--================ [Isotope File] ================-->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/player.js"></script>
+        <!--================ [vanila tilt File] ================-->
+        <script src="assets/js/vanilla-tilt.min.js"></script>
+        <!--================ [three min File] ================-->
+        <script src="assets/js/three.min.js"></script>
+        <!--================ [gsap File] ================-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--================ [Bootstrap File] ================-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <!--================ [Slick File] ================-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--================ [net File] ================-->
+        <script src="assets/js/net_animation.js"></script>
+        <!--================ [State.js] ================-->
+        <script src="assets/js/stats.min.js"></script>
+        <!--================ [script File] ================-->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

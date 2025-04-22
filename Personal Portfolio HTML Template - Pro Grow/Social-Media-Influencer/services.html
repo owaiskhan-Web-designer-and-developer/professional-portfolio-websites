@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/header/favicon.svg" type="image/x-icon">
+        <title>Pro Grow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@200..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <div class="blury"></div>
+        <canvas class='connecting-dots'></canvas>
+        <div id="cursor" class="cursor">
+            <div class="ring">
+                <div></div>
+            </div>
+            <div class="ring">
+                <div></div>
+            </div>
+        </div>
+        <!--================ [ Loader Start ] ================-->
+        <div class="loader-mask">
+            <div class="loader"></div>
+        </div>
+        <!--================ [ Loader Exit ] ================-->
+        <!--================ [ Header section Start ] ================-->
+        <div id="header-main" data-header>
+            <div class="container">
+                <header class="header" id="header" data-header>
+                    <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+                    <div class="menu-icon">
+                        <a href="javascript:void(0)"><i class="ri-menu-3-line menu-option"></i></a>
+                        <a href="javascript:void(0)"><i class="ri-close-line close-menu"></i></a>
+                    </div>
+                    <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download">
+                        <div class="down-ander">
+                            <div class="images-down">
+                                <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                            </div>
+                            <p>Download CV</p>
+                        </div>
+                    </a>
+                </header>
+            </div>
+        </div>
+        <nav class="main-header-menu">
+            <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+            <div class="container">
+                <ul class="tabs-ul-menu">
+                    <li class="tabs-li">
+                        <a href="about.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">About</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="resume.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Resume</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="services.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Services</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="portfolio.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="pricing.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Pricing</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="blogs.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Blogs</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="contact.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download-nav">
+                    <div class="down-ander">
+                        <div class="images-down">
+                            <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                        </div>
+                        <p>Download CV</p>
+                    </div>
+                </a>
+                <div class="social-icon-main">
+                    <a href="https://medium.com/" class="social-design-main">
+                        <img src="assets/images/footer/medium-m.svg" alt="medium">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-design-main">
+                        <img src="assets/images/footer/insta-m.svg" alt="insta">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="social-design-main">
+                        <img src="assets/images/footer/twitte-m.svg" alt="twitte">
+                    </a>
+                    <a href="mailto:support@davidoutwear.com" class="social-design-main">
+                        <img src="assets/images/footer/mail-m.svg" alt="mail">
+                    </a>
+                    <a href="https://dribbble.com/" class="social-design-main">
+                        <img src="assets/images/footer/drrible-m.svg" alt="drrible">
+                    </a>
+                    <a href="https://www.behance.net/" class="social-design-main">
+                        <img src="assets/images/footer/behance-m.svg" alt="behance">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-design-main">
+                        <img src="assets/images/footer/youtube-m.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--================ [ Header section Exit ] ================-->
+        <!--================ [ Hero section Start ] ================-->
+        <div class="hero" id="hero">
+            <div class="container ">
+                <nav class="main-menu">
+                    <div class="container">
+                        <ul class="tabs-ul animate-section-very">
+                            <li class="tabs-li" data-tab="About">
+                                <a href="about.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">About</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Resume">
+                                <a href="resume.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Resume</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Services">
+                                <a href="services.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Services</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Portfolio">
+                                <a href="portfolio.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Portfolio</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Pricing">
+                                <a href="pricing.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Pricing</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Blogs">
+                                <a href="blogs.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Blogs</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Contact">
+                                <a href="contact.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-hero animate-section">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <h1 class="section-title-name service-title">I'm ready to <span>Help</span> you</h1>
+                            <p class="section-detail service-title">
+                                Our vision is to be a trailblazing force in the world of Social Media and development,
+                                recognized for our unwavering
+                                commitment to excellence, integrity, and customer satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row main-service">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-4-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Influence search</a>
+                                </div>
+                                <p class="box-desc">Lectus sit amet est placerat in egestas erat imperdiet sed. Vitae
+                                    ultricies leo integer.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-5-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Production content</a>
+                                </div>
+                                <p class="box-desc">Semper eget duis at tellus at urna. Ut etiam sit amet nisl purus in
+                                    mollis nunc.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-6-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Promotion ads</a>
+                                </div>
+                                <p class="box-desc">In egestas erat imperdiet sed euismod nisi. Non risus quis varius
+                                    quam id diam.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-7-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Marketing Consult</a>
+                                </div>
+                                <p class="box-desc">Malesuada fames ac turpis egestas. Adipiscing bibendum est ultricies
+                                    integer.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-8-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Vlogger</a>
+                                </div>
+                                <p class="box-desc">Lectus sit amet est placerat in egestas erat imperdiet sed. Vitae
+                                    ultricies leo integer.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-9-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Digital marketing</a>
+                                </div>
+                                <p class="box-desc">Semper eget duis at tellus at urna. Ut etiam sit amet nisl purus in
+                                    mollis nunc.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-10-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Campaign program</a>
+                                </div>
+                                <p class="box-desc">In egestas erat imperdiet sed euismod nisi. Non risus quis varius
+                                    quam id diam.</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="box-services">
+                                <div class="box-image">
+                                    <img src="assets/images/services/icon-11-1.png" alt="box-image">
+                                </div>
+                                <div class="box-title">
+                                    <a href="#services-popup-content">Analytic social</a>
+                                </div>
+                                <p class="box-desc">Malesuada fames ac turpis egestas. Adipiscing bibendum est ultricies
+                                    integer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center trust-client">
+                        <div class="col-12">
+                            <h1 class="section-title-name service-title">Trusted By Hundred Clients</h1>
+                            <p class="section-detail service-title">
+                                Our happy customers give us impactful and positive feedback on our services customer
+                                support & etc.
+                            </p>
+                        </div>
+                        <div class="autoplay">
+                            <div>
+                                <div class="slider-box">
+                                    <div class="client-images">
+                                        <img src="assets/images/services/client-img2.png" alt="client-images">
+                                    </div>
+                                    <div class="client-name">
+                                        Marilina Harless
+                                    </div>
+                                    <p>Kello Auxa</p>
+                                    <div class="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                    </div>
+                                    <div class="review-detail">
+                                        Thanks to Avix's game-changing website design and development, our
+                                        online presence has reached new heights. Our website has never looked better.
+                                        Avix presence with their outstanding. development team took our and turned.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-box">
+                                    <div class="client-images">
+                                        <img src="assets/images/services/client-img3.png" alt="client-images">
+                                    </div>
+                                    <div class="client-name">
+                                        Olivia Segio
+                                    </div>
+                                    <p>Kello Auxa</p>
+                                    <div class="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                    </div>
+                                    <div class="review-detail">
+                                        Auxa has been a game-changer for our online presence. Their website
+                                        design and development team took our vision and
+                                        turned it into a stunning reality. The results speak for themselves – our
+                                        website has never looked better.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-box">
+                                    <div class="client-images">
+                                        <img src="assets/images/services/client-img4.png" alt="client-images">
+                                    </div>
+                                    <div class="client-name">
+                                        Marilina Harless
+                                    </div>
+                                    <p>Kello Auxa</p>
+                                    <div class="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                    </div>
+                                    <div class="review-detail">
+                                        Thanks to Avix's game-changing website design and development, our
+                                        online presence has reached new heights. Our website has never looked better.
+                                        Avix presence with their outstanding. development team took our and turned.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-box">
+                                    <div class="client-images">
+                                        <img src="assets/images/services/client-img5.png" alt="client-images">
+                                    </div>
+                                    <div class="client-name">
+                                        Olivia Segio
+                                    </div>
+                                    <p>Oria Studio</p>
+                                    <div class="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                    </div>
+                                    <div class="review-detail">
+                                        Auxa has been a game-changer for our online presence. Their website
+                                        design and development team took
+                                        our vision and
+                                        turned it into a stunning reality. The results speak for themselves – our
+                                        website has never looked better.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-box">
+                                    <div class="client-images">
+                                        <img src="assets/images/services/client-img3.png" alt="client-images">
+                                    </div>
+                                    <div class="client-name">
+                                        Marilina Harless
+                                    </div>
+                                    <p>Kello Auxa</p>
+                                    <div class="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                        <img src="assets/images/services/review.svg" alt="review">
+                                    </div>
+                                    <div class="review-detail">
+                                        Thanks to Avix's game-changing website design and development, our
+                                        online presence has reached new heights. Our website has never looked better.
+                                        Avix presence with their outstanding. development team took our and turned.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="services-popup-content" class="popup-container">
+                    <div class="popup-content popup-content2">
+                        <a href="#" class="close"><i class="ri-close-line"></i></a>
+                        <img class="blog-popup-img1" src="assets/images/portfolio/content.png" alt="gallery-img8">
+                        <h2 class="simple-steps">Influence search</h2>
+                        <p class="blog-sit-text">European languages are members of the same family. The languages only
+                            differ in their grammar, their pronu nciation and
+                            their most could refuse to pay common words. pronunciation and more common words. If several
+                            languages coalesce, the
+                            grammar of the resulting. Languages realizes why a new common language would be one could
+                            refuse
+                            to pay expensive
+                            translators.
+                        </p>
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 images-pot">
+                                <img src="assets/images/portfolio/corporat-2.png" alt="content-img2">
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 images-pot">
+                                <img src="assets/images/portfolio/corporate-3.png" alt="content-img2">
+                            </div>
+                        </div>
+                        <p class="blog-sit-text">European languages are members of the same family. The languages only
+                            differ in their grammar, their pronu nciation and
+                            their most could refuse to pay common words. pronunciation and more common words. If several
+                            languages coalesce, the
+                            grammar of the resulting. Languages realizes why a new common language would be one could
+                            refuse
+                            to pay expensive
+                            translators.
+                        </p>
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-6 col-lg-6 col-md-6 images-pot">
+                                <p class="blog-sit-text">treets empty that are usually busy are remarkable and can evoke
+                                    the
+                                    sense of historical pictures from before the invention of the motorcar. Other things
+                                    that are different at the moment will be queues to get into stores and the lines
+                                    marked
+                                    out on the floor to show how far apart we should be.
+                                </p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 images-pot">
+                                <img src="assets/images/portfolio/corporat-2.png" alt="content-img2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================ [ Hero section Exit ] ================-->
+        <!--================ [ Footer section Start ] ================-->
+        <footer class="footer animate-section">
+            <div class="container">
+                <div class="contain">
+                    <p class="copy-right">All rights reserved © <a
+                            href="https://1.envato.market/website-portfolio">The_Krishna</a></p>
+                    <div class="social-icon">
+                        <a href="https://medium.com/" class="social-design">
+                            <img src="assets/images/footer/medium.svg" alt="medium">
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-design">
+                            <img src="assets/images/footer/insta.svg" alt="insta">
+                        </a>
+                        <a href="https://x.com/?lang=en" class="social-design">
+                            <img src="assets/images/footer/twitte.svg" alt="twitte">
+                        </a>
+                        <a href="mailto:support@davidoutwear.com" class="social-design">
+                            <img src="assets/images/footer/mail.svg" alt="mail">
+                        </a>
+                        <a href="https://dribbble.com/" class="social-design">
+                            <img src="assets/images/footer/drrible.svg" alt="drrible">
+                        </a>
+                        <a href="https://www.behance.net/" class="social-design">
+                            <img src="assets/images/footer/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-design">
+                            <img src="assets/images/footer/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ [ Footer section Exit ] ================-->
+        <!--================ [Jquery File] ================-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <!--================ [Slick file] ================-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--================ [vanila tilt File] ================-->
+        <script src="assets/js/vanilla-tilt.min.js"></script>
+        <!--================ [three min File] ================-->
+        <script src="assets/js/three.min.js"></script>
+        <!--================ [magnific popup tilt File] ================-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/typed.js"></script>
+        <script src="assets/js/player.js"></script>
+        <!--================ [gsap File] ================-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--================ [Bootstrap File] ================-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--================ [script File] ================-->
+        <script src="assets/js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.autoplay').slick({
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    accessibility: true,
+                    focusOnChange: false,
+                    autoplay: true,
+                    arrows: false,
+                    dots: true,
+                    speed: 1000,
+                    responsive: [
+                        {
+                            breakpoint: 991,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                autoplay: true,
+                                arrows: false,
+                            }
+                        }
+                    ]
+                });
+            }); 
+        </script>
+    </body>
+</html>

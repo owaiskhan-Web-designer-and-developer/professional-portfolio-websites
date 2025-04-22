@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/header/favicon.svg" type="image/x-icon">
+        <title>Pro Grow</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@200..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
+    </head>
+    <body>
+        <div class="blury"></div>
+        <canvas id="canvas" width="1883" height="933"></canvas>
+        <div id="cursor" class="cursor">
+            <div class="ring">
+                <div></div>
+            </div>
+            <div class="ring">
+                <div></div>
+            </div>
+        </div>
+        <!--================ [ Loader Start ] ================-->
+        <div class="loader-mask">
+            <div class="loader"></div>
+        </div>
+        <!--================ [ Loader Exit ] ================-->
+        <!--================ [ Header section Start ] ================-->
+        <div id="header-main" data-header>
+            <div class="container">
+                <header class="header" id="header" data-header>
+                    <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+                    <div class="menu-icon">
+                        <a href="javascript:void(0)"><i class="ri-menu-3-line menu-option"></i></a>
+                        <a href="javascript:void(0)"><i class="ri-close-line close-menu"></i></a>
+                    </div>
+                    <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download">
+                        <div class="down-ander">
+                            <div class="images-down">
+                                <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                            </div>
+                            <p>Download CV</p>
+                        </div>
+                    </a>
+                </header>
+            </div>
+        </div>
+        <nav class="main-header-menu">
+            <a href="index.html" class="logo"><img src="assets/images/header/Logo.svg" alt="logo"></a>
+            <div class="container">
+                <ul class="tabs-ul-menu">
+                    <li class="tabs-li">
+                        <a href="about.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">About</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="resume.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Resume</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="services.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Services</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="portfolio.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="pricing.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Pricing</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="blogs.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Blogs</p>
+                        </a>
+                    </li>
+                    <li class="tabs-li">
+                        <a href="contact.html" class="list-link">
+                            <div class="imag-list">
+                                <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                            </div>
+                            <p class="name-tab">Contact</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="assets/images/header/Download_CV.pdf" target="_blank" class="download-nav">
+                    <div class="down-ander">
+                        <div class="images-down">
+                            <img src="assets/images/header/download.svg" alt="download" class="icon-down">
+                        </div>
+                        <p>Download CV</p>
+                    </div>
+                </a>
+                <div class="social-icon-main">
+                    <a href="https://medium.com/" class="social-design-main">
+                        <img src="assets/images/footer/medium.svg" alt="medium">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-design-main">
+                        <img src="assets/images/footer/insta.svg" alt="insta">
+                    </a>
+                    <a href="https://x.com/?lang=en" class="social-design-main">
+                        <img src="assets/images/footer/twitte.svg" alt="twitte">
+                    </a>
+                    <a href="mailto:support@davidoutwear.com" class="social-design-main">
+                        <img src="assets/images/footer/mail.svg" alt="mail">
+                    </a>
+                    <a href="https://dribbble.com/" class="social-design-main">
+                        <img src="assets/images/footer/drrible.svg" alt="drrible">
+                    </a>
+                    <a href="https://www.behance.net/" class="social-design-main">
+                        <img src="assets/images/footer/behance.svg" alt="behance">
+                    </a>
+                    <a href="https://www.youtube.com/" class="social-design-main">
+                        <img src="assets/images/footer/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--================ [ Header section Exit ] ================-->
+        <!--================ [ Hero section Start ] ================-->
+        <div class="hero" id="hero">
+            <div class="container ">
+                <nav class="main-menu">
+                    <div class="container">
+                        <ul class="tabs-ul animate-section-very">
+                            <li class="tabs-li" data-tab="About">
+                                <a href="about.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/about.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">About</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Resume">
+                                <a href="resume.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/resume.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Resume</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Services">
+                                <a href="services.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/services.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Services</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Portfolio">
+                                <a href="portfolio.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/portfolio.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Portfolio</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Pricing">
+                                <a href="pricing.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/princing.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Pricing</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Blogs">
+                                <a href="blogs.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/blogs.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Blogs</p>
+                                </a>
+                            </li>
+                            <li class="tabs-li" data-tab="Contact">
+                                <a href="contact.html" class="list-link">
+                                    <div class="imag-list">
+                                        <img src="assets/images/hero/contact.svg" alt="about" class="list-img">
+                                    </div>
+                                    <p class="name-tab">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="main-hero animate-section mega-hero">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="section-title ">Explore Our Legal Success Stories</h1>
+                            <p class="section-detail service-title">Discover key insights and emerging trends shaping
+                                the future of design: a detailed examination of how these innovations
+                                are reshaping our industry
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row blog-data-main">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-1.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">When to contact an attorney</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-2.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Wrongfully firing employee</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-3.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Child protection rights law</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-4.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">To Law students internship</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-5.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Investment management</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-6.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Know about industrial laws</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-1.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">When to contact an attorney</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-2.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Wrongfully firing employee</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-3.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Child protection rights law</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-4.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">To Law students internship</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-5.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Investment management</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 content">
+                            <a href="#services-popup-blog-1" class="blog-box">
+                                <div class="blog-image">
+                                    <img src="assets/images/blog/blog-6.png" alt="blog-image">
+                                </div>
+                                <div class="blog-detail-extra">
+                                    <p class="blog-name">Know about industrial laws</p>
+                                    <p class="blog-detail">Lorem ipsum quisque sodales miss the varius rana duru fermen.
+                                    </p>
+                                    <div class="bloger-name-div">
+                                        <p class="data-name-blog">29 Apr 2025</p>
+                                        <p class="data-name-blog">by <span>Martin Dan</span></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-port">
+                        <a href="javascript:void(0)" class="load-port" id="loadMore">
+                            <div class="load-main">
+                                <div class="load-down">
+                                    <img src="assets/images/portfolio/loader.svg" alt="download" class="icon-down">
+                                </div>
+                                <p>Load More</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- popusp Container -->
+            <div class="container">
+                <div id="services-popup-blog-1" class="popup-container">
+                    <div class="popup-content popup-content2">
+                        <a href="#" class="close"><i class="ri-close-line"></i></a>
+                        <div class="lawyer-service">
+                            <div class="image-layert-services">
+                                <img src="assets/images/blog/blog-detail-1.png" alt="Background-image-services">
+                            </div>
+                            <div class="userblogs-detail">
+                                <div class="bloger-images">
+                                    <img src="assets/images/blog/bloger-1.png" alt="blog-1" class="bloger-settle">
+                                    <p class="bloger-name-blog">Jimmy Anderson</p>
+                                </div>
+                                <div class="comment-bloger-design">
+                                    <div class="bloger-comment">
+                                        <img src="assets/images/blog/chat-1-line.png" alt="camelia">
+                                        <p class="bloger-name-blog meta-line">Comment</p>
+                                    </div>
+                                    <div class="bloger-comment">
+                                        <img src="assets/images/blog/heart-line.png" alt="camelia">
+                                        <p class="bloger-name-blog meta-line">25 like</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="blog-services-h2">When to contact an attorney</h2>
+                            <p class="service-detail-desc">Commodo semper bibendum adipiscing orci bibendum eu lectus
+                                sed. Commodo cursus vitae augue luctus nibh. Congue sit
+                                quisque volutpat libero tempor a id cursus purus. Pellentesque pellentesque scelerisque
+                                curabitur porta dolor. Amet
+                                vulputate vitae eget sit rhoncus imperdiet. Odio justo nullam scelerisque quis bibendum.
+                                Cras ipsum vel diam praesent
+                                tortor at elit sit. A risus molestie bibendum donec blandit adipiscing volutpat
+                                sollicitudin aliquam. Nec arcu cras
+                                ultrices velit sed ligula. Iaculis elit vulputate sollicitudin quisque ut faucibus.</p>
+                            <p class="service-detail-desc">Facilisis nec malesuada enim viverra cras. Auctor dignissim
+                                tellus vestibulum vitae hac amet. Suspendisse sit feugiat in
+                                pulvinar bibendum arcu nunc id. Duis hac nisl dui facilisi placerat at mauris elit
+                                scelerisque. Turpis ornare auctor
+                                amet vestibulum in magna aliquet ultricies netus. Adipiscing lobortis a interdum morbi
+                                etiam non. Elit sed magna risus
+                                tempor non quis. Nec pulvinar scelerisque in faucibus.</p>
+                            <div class="row design-services mt-3">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="image-layert-services data-analytics">
+                                        <img src="assets/images/blog/blog-detail-2.png" alt="Background-image-services">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                    <div class="image-layert-services data-analytics">
+                                        <img src="assets/images/blog/blog-1.png" alt="Background-image-services">
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="blog-services-h2">Problem & Solution</h2>
+                            <p class="service-detail-desc">Morbi accumsan ipsum venec tellus a odio tincidunt auctor Sed
+                                non mauris vitae erat consequat auctor eu in elit. Class
+                                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                Mauris in erat justo. Nullam ac
+                                urna eu felispibus condimentum sit amet a augue. Sed non neque elit</p>
+                            <ul class="services-ul">
+                                <li class="services-li">Sed tempor magna et risus ornare, a lobortis diam vehicula.</li>
+                                <li class="services-li">Vivamus tempus urna sit amet ante porttitor imperdiet.</li>
+                                <li class="services-li">Mauris sit amet eros ac tellus egestas placerat tempor nec
+                                    turpis.</li>
+                                <li class="services-li">Aliquam at leo pretium erat mattis consectetur</li>
+                            </ul>
+                            <h2 class="blog-services-h2">The Final Result</h2>
+                            <p class="service-detail-desc">Morbi accumsan ipsum venec tellus a odio tincidunt auctor Sed
+                                non mauris vitae erat
+                                consequat auctor eu in elit. Class
+                                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                Mauris in erat justo. Nullam
+                                ac
+                                urna eu felispibus condimentum sit amet a augue. Sed non neque elit</p>
+                            <div class="post-coment">
+                                <div class="heading-title-comment">
+                                    <h3 class="blog-query">Post Comments:</h3>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="user-image">
+                                        <img src="assets/images/blog/User-images.png" alt="user-image">
+                                    </div>
+                                    <div class="user-detail">
+                                        <div class="user_name">
+                                            <h4>Matthew Larrison</h4>
+                                            <div class="user_date">
+                                                <h5>31 January 2025</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user_comment">
+                                            <p>Ullamcorper a viverra lectus id pharetra nibh. Sit amet fames enim,
+                                                scelerisque in sed habitasse fringilla semper. Amet,
+                                                congue elementum adipiscing est lacus, nisl enim. Id mauris vel massa
+                                                tortor
+                                                massa. Aenean amet tincidunt enim quam.</p>
+                                        </div>
+                                        <div class="user_reply">
+                                            <a href="javascript:void(0);">reply →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment mega-comment-replay">
+                                    <div class="user-image">
+                                        <img src="assets/images/blog/User-image-2.png" alt="User-image-2">
+                                    </div>
+                                    <div class="user-detail">
+                                        <div class="user_name">
+                                            <h4>Joshua Flores</h4>
+                                            <div class="user_date">
+                                                <h5>02 February 2025</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user_comment">
+                                            <p>Ullamcorper a viverra lectus id pharetra nibh. Sit amet fames enim,
+                                                scelerisque in sed habitasse fringilla semper. Amet,
+                                                congue elementum adipiscing est lacus, nisl enim.</p>
+                                        </div>
+                                        <div class="user_reply">
+                                            <a href="javascript:void(0);">reply →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="user-image">
+                                        <img src="assets/images/blog/user-image-3.png" alt="user-image-3">
+                                    </div>
+                                    <div class="user-detail">
+                                        <div class="user_name">
+                                            <h4>Danial Stack</h4>
+                                            <div class="user_date">
+                                                <h5>05 February 2025</h5>
+                                            </div>
+                                        </div>
+                                        <div class="user_comment">
+                                            <p>Ullamcorper a viverra lectus id pharetra nibh. Sit amet fames enim,
+                                                scelerisque in sed habitasse fringilla semper. Amet,
+                                                congue elementum adipiscing est lacus, nisl enim. Id mauris vel massa
+                                                tortor
+                                                massa. Aenean amet tincidunt enim quam.</p>
+                                        </div>
+                                        <div class="user_reply">
+                                            <a href="javascript:void(0);">reply →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-coment">
+                                    <div class="heading-title-comment">
+                                        <h3 class="blog-query">Leave A Comment</h3>
+                                    </div>
+                                    <div class="contact-info row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="main-in">
+                                                <p>name*</p>
+                                                <input type="text" name="name" placeholder="Your Name"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="main-in">
+                                                <p>EMAIL*</p>
+                                                <input type="email" name="Email" placeholder="Your Email"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="main-in">
+                                                <p>Message</p>
+                                                <input type="text" name="name" placeholder="Write Here..."
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-port contact-main">
+                                        <a href="javascript:void(0)" class="load-port" id="loadMore-s">
+                                            <div class="load-main">
+                                                <div class="load-down">
+                                                    <img src="assets/images/blog/submit.svg" alt="download"
+                                                        class="icon-down">
+                                                </div>
+                                                <p>send comment</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================ [ Hero section Exit ] ================-->
+        <!--================ [ Footer section Start ] ================-->
+        <footer class="footer animate-section">
+            <div class="container">
+                <div class="contain">
+                    <p class="copy-right">All rights reserved © <a
+                            href="https://1.envato.market/website-portfolio">The_Krishna</a></p>
+                    <div class="social-icon">
+                        <a href="https://medium.com/" class="social-design">
+                            <img src="assets/images/footer/medium.svg" alt="medium">
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-design">
+                            <img src="assets/images/footer/insta.svg" alt="insta">
+                        </a>
+                        <a href="https://x.com/?lang=en" class="social-design">
+                            <img src="assets/images/footer/twitte.svg" alt="twitte">
+                        </a>
+                        <a href="mailto:support@davidoutwear.com" class="social-design">
+                            <img src="assets/images/footer/mail.svg" alt="mail">
+                        </a>
+                        <a href="https://dribbble.com/" class="social-design">
+                            <img src="assets/images/footer/drrible.svg" alt="drrible">
+                        </a>
+                        <a href="https://www.behance.net/" class="social-design">
+                            <img src="assets/images/footer/behance.svg" alt="behance">
+                        </a>
+                        <a href="https://www.youtube.com/" class="social-design">
+                            <img src="assets/images/footer/youtube.svg" alt="youtube">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--================ [ Footer section Exit ] ================-->
+        <!--================ [Jquery File] ================-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+        <!--================ [vanila tilt File] ================-->
+        <script src="assets/js/vanilla-tilt.min.js"></script>
+        <!--================ [three min File] ================-->
+        <script src="assets/js/three.min.js"></script>
+        <!--================ [gsap File] ================-->
+        <script src="assets/js/gsap.min.js"></script>
+        <!--================ [jquery.easypiechart File] ================-->
+        <script src="assets/js/jquery.easypiechart.min.js"></script>
+        <!--================ [slick.theme File] ================-->
+        <script src="assets/js/slick.min.js"></script>
+        <!--================ [Bootstrap File] ================-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--================ [type.js] ================-->
+        <script src="assets/js/typed.min.js"></script>
+        <!--================ [popups File] ================-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--================ [State.js] ================-->
+        <script src="assets/js/stats.min.js"></script>
+        <!--================ [script File] ================-->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
